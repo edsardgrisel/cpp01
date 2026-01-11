@@ -10,12 +10,7 @@ Zombie::~Zombie()
 	std::cout << "Destructor called on " << this->name << std::endl;
 }
 
-
 void	Zombie::announce(void)
 {
 	std::cout << this->name << ": BraiiiiiiinnnzzzZ...\n" << std::endl;
 }
-
-
-
-

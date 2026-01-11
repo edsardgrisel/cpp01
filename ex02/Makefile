@@ -1,11 +1,9 @@
-NAME = EX01
+NAME = EX02
 CPP = c++
 CPPFLAGS = -Wall -Werror -Wextra -MMD
 
 BUILD_DIR = build
-SRC =	main.cpp \
-		Zombie.cpp \
-		zombieHorde.cpp
+SRC =	main.cpp
 OBJ = $(patsubst %.cpp,$(BUILD_DIR)/%.o,$(SRC))
 DEP = ${OBJ:.o=.d}
 

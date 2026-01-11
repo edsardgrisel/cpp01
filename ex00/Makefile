@@ -1,4 +1,4 @@
-NAME = BraiiiiiiinnnzzzZ
+NAME = EX00
 CPP = c++
 CPPFLAGS = -Wall -Werror -Wextra -MMD
 
