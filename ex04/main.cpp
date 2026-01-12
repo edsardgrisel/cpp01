@@ -14,9 +14,19 @@ int	main(int argc, char *argv[])
 	int s1Len = s1.length();
 	const std::string s2 = argv[3];
 	int s2Len = s2.length();
+	if (s1Len == 0)
+	{
+		std::cerr << "s1 cannot be empty" << std::endl;
+		return (1);
+	}
 	std::string buffer;
-	std::ofstream outFile(fileName + ".replace");
 	std::ifstream inFile(fileName);
+	if (!inFile.is_open())
+	{
+		std::cerr << "Error opening file: " << fileName << std::endl;
+		return (1);
+	}
+	std::ofstream outFile(fileName + ".replace");
 	size_t indexToReplace;
 
 	while (std::getline(inFile, buffer))
