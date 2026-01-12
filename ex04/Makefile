@@ -1,15 +1,11 @@
 NAME = EX04
 CPP = c++
-CPPFLAGS = -Wall -Werror -Wextra -MMD -g
+CPPFLAGS = -Wall -Werror -Wextra -MMD
 
 BUILD_DIR = build
 SRC =	main.cpp
 OBJ = $(patsubst %.cpp,$(BUILD_DIR)/%.o,$(SRC))
 DEP = ${OBJ:.o=.d}
-
-TEST_NAME = test_runner
-TEST_SRC = test.cpp
-TEST_OBJ = $(patsubst %.cpp,$(BUILD_DIR)/%.o,$(TEST_SRC))
 
 all: $(NAME)
 	@printf "Compilation done👍\n"
