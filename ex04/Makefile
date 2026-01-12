@@ -7,6 +7,10 @@ SRC =	main.cpp
 OBJ = $(patsubst %.cpp,$(BUILD_DIR)/%.o,$(SRC))
 DEP = ${OBJ:.o=.d}
 
+TEST_NAME = test_runner
+TEST_SRC = test.cpp
+TEST_OBJ = $(patsubst %.cpp,$(BUILD_DIR)/%.o,$(TEST_SRC))
+
 all: $(NAME)
 	@printf "Compilation done👍\n"
 
