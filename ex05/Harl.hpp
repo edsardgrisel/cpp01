@@ -1,5 +1,9 @@
 #include <string>
 
+#ifndef HARL_HPP
+#define HARL_HPP
+
+
 class Harl
 {
 	private:
@@ -14,3 +18,5 @@ class Harl
 
 		void complain(std::string level);
 };
+
+#endif // HARL_HPP
